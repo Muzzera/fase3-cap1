@@ -25,7 +25,7 @@
 ## 📜 Descrição
 
 *Este documento descreve detalhadamente o circuito desenvolvido utilizando a plataforma Wokwi, para simular um sistema inteligente de irrigação agrícola controlado por um microcontrolador ESP32.*
-
+![Diagrama da Solução](./assets/wokwi.png)
 
 ## 📁 Estrutura de pastas
 
