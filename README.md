@@ -24,7 +24,7 @@
 
 ## 📜 Descrição
 
-*Descreva seu projeto com base no texto do PBL (até 600 palavras)*
+*Este documento descreve detalhadamente o circuito desenvolvido utilizando a plataforma Wokwi, para simular um sistema inteligente de irrigação agrícola controlado por um microcontrolador ESP32.*
 
 
 ## 📁 Estrutura de pastas
