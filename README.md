@@ -98,10 +98,91 @@ Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 - <b>src</b>: Todo o código fonte criado para o desenvolvimento do projeto ao longo das 7 fases.
 
 - <b>README.md</b>: arquivo que serve como guia e explicação geral sobre o projeto (o mesmo que você está lendo agora).
+- <b>README_ENTREGA2.md</b>: arquivo que serve como guia e explicação geral sobre a ENTREGA 2.
+- <b>main.ino </b> Arquivo Entrega 1
+- <b>Armazenamento_irrigacao.py</b> Arquivo Entrega 2
+- <b>tabela_sensor_data_oracle.sql </b> Banco de Dados Entrega 2
 
 ## 🔧 Como executar o código
 
-*Acrescentar as informações necessárias sobre pré-requisitos (IDEs, serviços, bibliotecas etc.) e instalação básica do projeto, descrevendo eventuais versões utilizadas. Colocar um passo a passo de como o leitor pode baixar o seu código e executá-lo a partir de sua máquina ou seu repositório. Considere a explicação organizada em fase.*
+# 🚀 Guia de Execução dos Scripts (C/C++ e Python)
+
+Este guia descreve como executar o código do sistema de irrigação inteligente tanto na plataforma de simulação (Wokwi para C/C++) quanto localmente com armazenamento em banco SQL (Python).
+
+---
+
+## 🧠 Projeto: FarmTech Solutions — Irrigação Inteligente
+
+---
+
+## 🔷 Parte 1 — Código C/C++ no ESP32 (main.ino)
+
+### ✅ Plataforma:
+- [Wokwi](https://wokwi.com) — Simulador online gratuito
+
+### ▶️ Execução no Wokwi:
+1. Acesse https://wokwi.com
+2. Crie um novo projeto ESP32.
+3. Substitua o conteúdo de `main.ino` pelo código fornecido.
+4. Monte o circuito com os seguintes componentes:
+   - ESP32
+   - 2 botões (GPIO 12 e 13)
+   - Sensor LDR com resistor 10k (GPIO 34)
+   - DHT22 (GPIO 27)
+   - Relé (GPIO 14)
+5. Clique em **“Start Simulation”** para testar.
+
+---
+
+## 🔶 Parte 2 — Script Python com Banco de Dados
+
+### ✅ Requisitos:
+- Python 3.8+
+- Instalar SQLAlchemy:
+  ```bash
+  pip install sqlalchemy
+  ```
+
+### ▶️ Executando o Script:
+1. Abra o terminal na pasta onde está `armazenamento_irrigacao.py`.
+2. Execute o script com:
+
+```bash
+python armazenamento_irrigacao.py
+```
+
+3. Isso criará a tabela `sensor_data`, inserirá os dados simulados e realizará operações de consulta, atualização e remoção.
+
+### 🔁 Alterar Banco de Dados:
+Edite no script a linha:
+
+```python
+DATABASE_URL = 'sqlite:///sensor.db'
+```
+
+Troque por:
+- Oracle:
+  `oracle+cx_oracle://usuario:senha@host:porta/?service_name=XE`
+- PostgreSQL:
+  `postgresql://usuario:senha@localhost/db`
+- MySQL:
+  `mysql+pymysql://usuario:senha@localhost/db`
+
+---
+
+## 📦 Arquivos Enviados
+
+| Arquivo                           | Descrição                                   |
+|----------------------------------|---------------------------------------------|
+| `main.ino`                       | Código C/C++ para ESP32                     |
+| `armazenamento_irrigacao.py`     | Script Python com operações CRUD            |
+| `tabela_exemplo_sensor_data.csv` | Dados de exemplo em CSV                     |
+| `tabela_sensor_data_oracle.sql`  | Script SQL para Oracle                      |
+| `README_ENTREGA2.md`             | Documentação da estrutura de dados e MER    |
+
+---
+
+Desenvolvido por FarmTech Solutions 🌾
 
 
 ## 🗃 Histórico de lançamentos
