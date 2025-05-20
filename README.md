@@ -187,15 +187,15 @@ Desenvolvido por FarmTech Solutions 🌾
 
 ## 🗃 Histórico de lançamentos
 
-* 0.5.0 - XX/XX/2024
+* 0.3.1 - Adicionado os arquivos scripts 20/05/2025
     * 
-* 0.4.0 - XX/XX/2024
+* 0.3.0 - Adicionado imagem wokwi 20/05/2025
     * 
-* 0.3.0 - XX/XX/2024
+* 0.2.1 - Atualização do readme.md 20/05/2025
     * 
-* 0.2.0 - XX/XX/2024
+* 0.2.0 - Atualização do readme.md 20/05/2025
     * 
-* 0.1.0 - XX/XX/2024
+* 0.1.0 -Initial Commit  20/05/2025
     *
 
 ## 📋 Licença
