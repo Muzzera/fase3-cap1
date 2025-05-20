@@ -6,22 +6,20 @@
 
 <br>
 
-# Nome do projeto
+# Construindo uma máquina agrícola
 
-## Nome do grupo
+## AgroDev
 
 ## 👨‍🎓 Integrantes: 
-- <a href="https://www.linkedin.com/company/inova-fusca">Nome do integrante 1</a>
-- <a href="https://www.linkedin.com/company/inova-fusca">Nome do integrante 2</a>
-- <a href="https://www.linkedin.com/company/inova-fusca">Nome do integrante 3</a> 
-- <a href="https://www.linkedin.com/company/inova-fusca">Nome do integrante 4</a> 
-- <a href="https://www.linkedin.com/company/inova-fusca">Nome do integrante 5</a>
+- <a href="https://www.linkedin.com/in/issamahmod/">Mahmod Ahmad Issa</a>
+- <a href="https://www.linkedin.com/in/gustavo-zanette-martins">Gustavo Zanetti Martins</a>
+
 
 ## 👩‍🏫 Professores:
 ### Tutor(a) 
-- <a href="https://www.linkedin.com/company/inova-fusca">Nome do Tutor</a>
+- <a href="https://www.linkedin.com/in/leonardoorabona/">Leoruiz197</a>
 ### Coordenador(a)
-- <a href="https://www.linkedin.com/company/inova-fusca">Nome do Coordenador</a>
+- <a href="https://www.linkedin.com/in/andregodoichiovato/">André Godoy</a>
 
 
 ## 📜 Descrição
