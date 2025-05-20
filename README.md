@@ -25,7 +25,67 @@
 ## 📜 Descrição
 
 *Este documento descreve detalhadamente o circuito desenvolvido utilizando a plataforma Wokwi, para simular um sistema inteligente de irrigação agrícola controlado por um microcontrolador ESP32.*
+
+
 ![Diagrama da Solução](./assets/wokwi.png)
+
+# 🌱 Sistema de Irrigação Inteligente com ESP32
+
+Este projeto simula um sistema de irrigação inteligente utilizando o microcontrolador ESP32 e sensores representados por componentes disponíveis na plataforma Wokwi.
+
+---
+
+## 🔧 Componentes Utilizados
+
+| Componente      | Simulação                       | Pino ESP32 |
+|-----------------|----------------------------------|------------|
+| Botão           | Sensor de Fósforo (booleano)     | GPIO 13    |
+| Botão           | Sensor de Potássio (booleano)    | GPIO 12    |
+| LDR             | Sensor de pH (valor analógico)   | GPIO 34    |
+| DHT22           | Sensor de Umidade do Solo        | GPIO 27    |
+| Módulo Relé     | Controle da Bomba d'Água         | GPIO 14    |
+| LED             | Indicador visual (via relé)      | Saída do Relé |
+
+---
+
+## 🔌 Ligações
+
+- **Botões**: Um terminal no pino GPIO (13 ou 12) e outro no GND.
+- **LDR**: Um terminal no 3.3V e outro no GPIO 34 com resistor de 10kΩ ao GND (divisor de tensão).
+- **DHT22**: VCC no 3.3V, GND no GND, e DATA no GPIO 27.
+- **Relé**: IN no GPIO 14, VCC no 3.3V, GND no GND. A saída do relé aciona o LED.
+
+---
+
+## ⚙️ Lógica de Controle
+
+A bomba de irrigação é ativada (`RELAY_PIN = HIGH`) se **qualquer** das seguintes condições for verdadeira:
+
+- Umidade do solo abaixo de 40%;
+- Fósforo ausente (botão F solto);
+- Potássio ausente (botão K solto);
+- pH fora da faixa ideal (menor que 5.5 ou maior que 7.5).
+
+Caso contrário, a bomba permanece desligada (`RELAY_PIN = LOW`).
+
+---
+
+## 💻 Plataforma de Simulação
+
+Este projeto pode ser testado no [Wokwi](https://wokwi.com), utilizando o modo de simulação ESP32. Basta copiar o código `main.ino` e montar o circuito conforme o esquema acima.
+
+---
+
+## 📄 Exemplo de Saída no Monitor Serial
+
+```
+P: Sim | K: Não | pH: 6.8 | Umidade: 35.5%
+Bomba: Ligada
+```
+
+---
+
+Desenvolvido para fins educacionais — Projeto FarmTech Solutions 🌾
 
 ## 📁 Estrutura de pastas
 
